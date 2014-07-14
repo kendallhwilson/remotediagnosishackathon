@@ -12,7 +12,9 @@ import android.view.ViewGroup;
 import android.os.Build;
 
 public class MainActivity extends Activity {	// Branden was hurrrrr
-	//Kendall was hurrrr as well
+												//Kendall was hurrrr as well
+												//Kaitlyn was hurrrr too :D
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
