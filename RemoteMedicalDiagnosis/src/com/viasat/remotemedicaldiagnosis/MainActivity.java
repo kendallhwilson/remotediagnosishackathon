@@ -13,6 +13,7 @@ import android.os.Build;
 
 public class MainActivity extends Activity {	// Branden was hurrrrr
 	//Kendall was here as well
+	//Kaitlyn was here too :D
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
