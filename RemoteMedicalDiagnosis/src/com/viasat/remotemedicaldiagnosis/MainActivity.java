@@ -61,5 +61,10 @@ public class MainActivity extends Activity {	// Branden was hurrrrr
             return rootView;
         }
     }
+    
+    public void weDidIt()
+    {
+    	
+    }
 
 }
