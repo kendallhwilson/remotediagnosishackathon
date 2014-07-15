@@ -4,5 +4,9 @@
     <string name="app_name">Remote Medical Diagnosis</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    
+    <!--  Navigation Drawer -->
+    <string name="menu_open">menu open</string>
+    <string name="menu_close">menu close</string>
 
 </resources>
