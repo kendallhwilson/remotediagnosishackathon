@@ -84,6 +84,14 @@ public class NavigationDrawer extends Activity
 			
 				case R.id.nav_drawer_home:
 					startActivity(new Intent(NavigationDrawer.this, MainActivity.class));
+				case R.id.nav_cam:
+					Intent camIntent = getPackageManager().getLaunchIntentForPackage("com.pas.webcam");
+					startActivity(camIntent);
+					break;
+				case R.id.nav_microscope:
+					Intent micIntent = getPackageManager().getLaunchIntentForPackage("com.yuvalluzon.yourmagnifier");
+					startActivity(micIntent);
+					break;
 //				case R.id.nav_patient_info:
 //					startActivity(new Intent(NavigationDrawer.this, PatientInfo.class));
 //				case R.id.nav_drawer_heart_rate_bpi:
