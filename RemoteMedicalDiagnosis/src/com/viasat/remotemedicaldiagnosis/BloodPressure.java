@@ -3,15 +3,7 @@ package com.viasat.remotemedicaldiagnosis;
 import java.util.Random;
 import com.viasat.remotemedicaldiagnosis.R;
 
-
-
-
-import android.app.Activity;
-import android.content.ActivityNotFoundException;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -84,8 +76,8 @@ public class BloodPressure extends NavigationDrawer
     		//E.patient.setPulse(pulse);
     	}
     	
-    	sysTextView.setText(systolic);
-    	diTextView.setText(diastolic);
+    	sysTextView.setText(Integer.toString(systolic));
+    	diTextView.setText(Integer.toString(diastolic));
     	//pulseTextView.setText(pulse);
     	
     	//places arrow in correct place

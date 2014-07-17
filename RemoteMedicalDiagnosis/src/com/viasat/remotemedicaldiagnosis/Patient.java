@@ -12,6 +12,7 @@ public class Patient
 	private String reason;
 	private String surgery;
 	private String drugs;
+	private String allergies;
 	
 	//Added separately, not passed to constructor
 	private int systolic;
@@ -19,7 +20,7 @@ public class Patient
 	private int pulse;
 	
 	public Patient(String mFirstName, String mLastName, String mBirthday, String mGender,
-			String mReason, String mSurgery, String mDrugs)
+			String mReason, String mSurgery, String mDrugs, String mAllergies)
 	{
 		firstName = mFirstName;
 		lastName = mLastName;
@@ -28,6 +29,7 @@ public class Patient
 		reason = mReason;
 		surgery = mSurgery;
 		drugs = mDrugs;
+		allergies = mAllergies;
 		
 		systolic = 0;
 		diastolic = 0;
@@ -64,6 +66,7 @@ public class Patient
 				+ "\nReason for visit: " + reason
 				+ "\nPast surgeries: " + surgery
 				+ "\nDrugs taking: " + drugs
+				+ "\nAllergies: " + allergies
 				+ "\nMeasured heart rate: " + pulse
 				+ "\nBlood pressure: " + systolic + "/" + diastolic);
 		}
