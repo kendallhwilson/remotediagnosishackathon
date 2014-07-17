@@ -28,5 +28,7 @@
         <item name="android:background">?android:attr/activatedBackgroundIndicator</item>
         <item name="android:minHeight">?android:attr/listPreferredItemHeightSmall</item>
     </style>
+    
+    
 
 </resources>

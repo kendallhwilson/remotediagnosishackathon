@@ -81,14 +81,14 @@ public class NavigationDrawer extends Activity
 			int vId= view.getId();
 			switch (vId)
 			{
-				case R.id.nav_cam:
-					Intent camIntent = getPackageManager().getLaunchIntentForPackage("com.pas.webcam");
-					startActivity(camIntent);
-					break;
-				case R.id.nav_microscope:
-					Intent micIntent = getPackageManager().getLaunchIntentForPackage("com.yuvalluzon.yourmagnifier");
-					startActivity(micIntent);
-					break;
+//				case R.id.nav_cam:
+//					Intent camIntent = getPackageManager().getLaunchIntentForPackage("com.pas.webcam");
+//					startActivity(camIntent);
+//					break;
+//				case R.id.nav_microscope:
+//					Intent micIntent = getPackageManager().getLaunchIntentForPackage("com.yuvalluzon.yourmagnifier");
+//					startActivity(micIntent);
+//					break;
 //				case R.id.nav_drawer_home:
 //					startActivity(new Intent(NavigationDrawer.this, Home.class));
 //				case R.id.nav_patient_info:
