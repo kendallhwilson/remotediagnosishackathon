@@ -20,6 +20,13 @@ public final class R {
          */
         public static final int activity_horizontal_margin=0x7f040000;
         public static final int activity_vertical_margin=0x7f040001;
+        public static final int help_margin_bottom=0x7f040005;
+        /**  Help Menu. 
+         */
+        public static final int help_margin_left=0x7f040002;
+        public static final int help_margin_right=0x7f040003;
+        public static final int help_margin_top=0x7f040004;
+        public static final int help_text_size=0x7f040006;
     }
     public static final class drawable {
         public static final int action_bar_home=0x7f020000;
@@ -31,6 +38,7 @@ public final class R {
         public static final int ic_launcher=0x7f020006;
         public static final int light_orange_block=0x7f020007;
         public static final int menu_navdrawer_icon=0x7f020008;
+<<<<<<< HEAD
         public static final int nav_drawer_blood_pressure=0x7f020009;
         public static final int nav_drawer_cam=0x7f02000a;
         public static final int nav_drawer_home=0x7f02000b;
@@ -41,6 +49,17 @@ public final class R {
     }
     public static final class id {
         public static final int action_settings=0x7f080012;
+=======
+        public static final int nav_drawer_cam=0x7f020009;
+        public static final int nav_drawer_home=0x7f02000a;
+        public static final int nav_drawer_microscope=0x7f02000b;
+        public static final int red_block=0x7f02000c;
+        public static final int wellness_full_bar=0x7f02000d;
+        public static final int yellow_block=0x7f02000e;
+    }
+    public static final class id {
+        public static final int action_settings=0x7f080011;
+>>>>>>> origin/master
         public static final int container=0x7f080000;
         public static final int content_frame=0x7f08000c;
         public static final int dark_orange_block=0x7f080006;
@@ -50,10 +69,16 @@ public final class R {
         public static final int green_block=0x7f080009;
         public static final int left_drawer=0x7f08000d;
         public static final int light_orange_block=0x7f080007;
+<<<<<<< HEAD
         public static final int nav_drawer_blood_pressure=0x7f08000e;
         public static final int nav_drawer_cam=0x7f08000f;
         public static final int nav_drawer_home=0x7f080010;
         public static final int nav_drawer_microscope=0x7f080011;
+=======
+        public static final int nav_drawer_cam=0x7f08000e;
+        public static final int nav_drawer_home=0x7f08000f;
+        public static final int nav_drawer_microscope=0x7f080010;
+>>>>>>> origin/master
         public static final int pager=0x7f08000b;
         public static final int red_block=0x7f080005;
         public static final int sys_text=0x7f080003;
