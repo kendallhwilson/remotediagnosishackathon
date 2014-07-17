@@ -16,6 +16,8 @@ public class BloodPressure extends NavigationDrawer
 	
 	int systolic = 0;
 	int diastolic = 0;
+	int pulse = 0;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) 
     {
