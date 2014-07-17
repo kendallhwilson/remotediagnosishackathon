@@ -8,5 +8,6 @@
     <!--  Navigation Drawer -->
     <string name="menu_open">menu open</string>
     <string name="menu_close">menu close</string>
+    <string name="nav_drawer_home">Home</string>
 
 </resources>

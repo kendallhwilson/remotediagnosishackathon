@@ -47,7 +47,7 @@ public class NavigationDrawer extends Activity
 			mViews= new ArrayList<View>(3);
 			LayoutInflater layoutInflater= (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
 
-			//mViews.add(layoutInflater.inflate(R.layout.nav_drawer_home, null));
+			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_home, null));
 			//mViews.add(layoutInflater.inflate(R.layout.nav_drawer_patient_info, null));
 			//mViews.add(layoutInflater.inflate(R.layout.nav_drawer_heart_rate_bpi, null));
 			//mViews.add(layoutInflater.inflate(R.layout.nav_drawer_image, null));
@@ -82,8 +82,8 @@ public class NavigationDrawer extends Activity
 			switch (vId)
 			{
 			
-//				case R.id.nav_drawer_home:
-//					startActivity(new Intent(NavigationDrawer.this, Home.class));
+				case R.id.nav_drawer_home:
+					startActivity(new Intent(NavigationDrawer.this, MainActivity.class));
 //				case R.id.nav_patient_info:
 //					startActivity(new Intent(NavigationDrawer.this, PatientInfo.class));
 //				case R.id.nav_drawer_heart_rate_bpi:
