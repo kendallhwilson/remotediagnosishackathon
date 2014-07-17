@@ -53,9 +53,7 @@ public class NavigationDrawer extends Activity
 			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_home, null));
 			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_cam, null));
 			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_microscope, null));
-			//mViews.add(layoutInflater.inflate(R.layout.nav_drawer_image, null));
-			//mViews.add(layoutInflater.inflate(R.layout.nav_drawer_video_conference, null));
-			//mViews.add(layoutInflater.inflate(R.layout.nav_drawer_microscope, null));
+			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_blood_pressure, null));
 			
 		}
 		@Override
@@ -95,6 +93,9 @@ public class NavigationDrawer extends Activity
 					Intent micIntent = getPackageManager().getLaunchIntentForPackage("com.yuvalluzon.yourmagnifier");
 					startActivity(micIntent);
 					break;
+				case R.id.nav_drawer_blood_pressure:
+					startActivity(new Intent(NavigationDrawer.this, BloodPressure.class));
+					break;
 //				case R.id.nav_patient_info:
 //					startActivity(new Intent(NavigationDrawer.this, PatientInfo.class));
 //				case R.id.nav_drawer_heart_rate_bpi:
@@ -121,8 +122,7 @@ public class NavigationDrawer extends Activity
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList= (ListView) findViewById(R.id.left_drawer);
 		// prepare drawer
-		mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow,
-				GravityCompat.START);
+		mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow,GravityCompat.START);
 		InternalAdapter adapter= new InternalAdapter();
 		mDrawerList.setAdapter(adapter);
 		mDrawerList.setOnItemClickListener(adapter);

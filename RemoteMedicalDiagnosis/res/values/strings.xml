@@ -11,6 +11,6 @@
     <string name="nav_drawer_home">Home</string>
     <string name="nav_drawer_cam">Web Camera</string>
     <string name="nav_drawer_microscope">Microscope</string>
-    
+    <string name="nav_drawer_blood_pressure">Blood Pressure</string>
 
 </resources>

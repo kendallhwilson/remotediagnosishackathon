@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_drawer_blood_pressure"
+    style="@style/nav_drawer_style"
+    android:drawableLeft="@drawable/nav_drawer_blood_pressure"
+    android:text="@string/nav_drawer_blood_pressure"
+    android:textColor="#1E75CC"
+     />

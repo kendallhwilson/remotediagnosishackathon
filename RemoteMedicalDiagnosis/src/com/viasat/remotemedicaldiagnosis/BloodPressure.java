@@ -19,6 +19,7 @@ public class BloodPressure extends NavigationDrawer
     @Override
     protected void onCreate(Bundle savedInstanceState) 
     {
+    	super.onCreate(savedInstanceState);
     	setContentView(R.layout.blood_pressure);
     	
     	RelativeLayout bar = (RelativeLayout) findViewById(R.id.wellness_bar);
