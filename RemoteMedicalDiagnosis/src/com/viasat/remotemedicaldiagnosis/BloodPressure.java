@@ -26,7 +26,7 @@ public class BloodPressure extends NavigationDrawer
     	
     	RelativeLayout bar = (RelativeLayout) findViewById(R.id.wellness_bar);
     	ImageView redBlock = (ImageView) findViewById(R.id.red_block);
-    	redBlock.setMinimumHeight(bar.getHeight()/5);
+    	redBlock.getLayoutParams().height = bar.getHeight()/5;
     	
     	Random random = new Random();
     	systolic = random.nextInt(100) + 100; //between 100-200
