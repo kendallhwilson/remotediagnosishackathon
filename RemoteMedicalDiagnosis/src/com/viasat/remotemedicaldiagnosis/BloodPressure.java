@@ -38,31 +38,22 @@ public class BloodPressure extends NavigationDrawer
     	if (systolic > 180)
     	{
     		diastolic = random.nextInt(10) + 110; //between 110-120
-    		lp.addRule(RelativeLayout.ALIGN_LEFT, R.id.red_block);
-    		lp.addRule(RelativeLayout.ABOVE, R.id.dark_orange_block);
     	}
     	else if (systolic > 160)
     	{
     		diastolic = random.nextInt(10) + 100; //between 100-110
-    		lp.addRule(RelativeLayout.ALIGN_LEFT, R.id.dark_orange_block);
-    		lp.addRule(RelativeLayout.ABOVE, R.id.light_orange_block);
     	}
     	else if (systolic > 140)
     	{
     		diastolic = random.nextInt(10) + 90; //between 90-100
-    		lp.addRule(RelativeLayout.ALIGN_LEFT, R.id.light_orange_block);
-    		lp.addRule(RelativeLayout.ABOVE, R.id.yellow_block);
     	}
     	else if (systolic > 120)
     	{
     		diastolic = random.nextInt(10) + 80; //between 80-90
-    		lp.addRule(RelativeLayout.ALIGN_LEFT, R.id.yellow_block);
-    		lp.addRule(RelativeLayout.ABOVE, R.id.green_block);
     	}
     	else
     	{
     		diastolic = random.nextInt(10) + 70; //between 70-80
-    		lp.addRule(RelativeLayout.ALIGN_LEFT, R.id.green_block);
     	}
     	
     	TextView sysTextView = (TextView) findViewById(R.id.sys_text);
@@ -82,6 +73,7 @@ public class BloodPressure extends NavigationDrawer
     	
     	//places arrow in correct place
     	//ImageView arrow = (ImageView) findViewById(R.id.arrow);
+    	//lp.addRule(RelativeLayout.RIGHT_OF, R.id.red_block);
     	//arrow.setLayoutParams(lp);
     	
     	/*
