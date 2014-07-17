@@ -22,18 +22,23 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int drawer_shadow=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int menu_navdrawer_icon=0x7f020002;
-        public static final int nav_drawer_home=0x7f020003;
+        public static final int action_bar_home=0x7f020000;
+        public static final int drawer_shadow=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int menu_navdrawer_icon=0x7f020003;
+        public static final int nav_drawer_cam=0x7f020004;
+        public static final int nav_drawer_home=0x7f020005;
+        public static final int nav_drawer_microscope=0x7f020006;
     }
     public static final class id {
-        public static final int action_settings=0x7f080006;
+        public static final int action_settings=0x7f080008;
         public static final int container=0x7f080000;
         public static final int content_frame=0x7f080003;
         public static final int drawer_layout=0x7f080001;
         public static final int left_drawer=0x7f080004;
-        public static final int nav_drawer_home=0x7f080005;
+        public static final int nav_drawer_cam=0x7f080005;
+        public static final int nav_drawer_home=0x7f080006;
+        public static final int nav_drawer_microscope=0x7f080007;
         public static final int pager=0x7f080002;
     }
     public static final class layout {
@@ -41,7 +46,9 @@ public final class R {
         public static final int blood_pressure=0x7f030001;
         public static final int fragment_main=0x7f030002;
         public static final int main=0x7f030003;
-        public static final int nav_drawer_home=0x7f030004;
+        public static final int nav_drawer_cam=0x7f030004;
+        public static final int nav_drawer_home=0x7f030005;
+        public static final int nav_drawer_microscope=0x7f030006;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -54,7 +61,9 @@ public final class R {
         /**   Navigation Drawer 
          */
         public static final int menu_open=0x7f050003;
+        public static final int nav_drawer_cam=0x7f050006;
         public static final int nav_drawer_home=0x7f050005;
+        public static final int nav_drawer_microscope=0x7f050007;
     }
     public static final class style {
         /** 

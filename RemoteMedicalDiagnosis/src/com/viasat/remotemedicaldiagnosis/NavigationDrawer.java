@@ -2,6 +2,7 @@ package com.viasat.remotemedicaldiagnosis;
 
 import java.util.ArrayList;
 
+import android.app.ActionBar.LayoutParams;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -10,6 +11,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
@@ -48,8 +51,8 @@ public class NavigationDrawer extends Activity
 			LayoutInflater layoutInflater= (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
 
 			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_home, null));
-			//mViews.add(layoutInflater.inflate(R.layout.nav_drawer_patient_info, null));
-			//mViews.add(layoutInflater.inflate(R.layout.nav_drawer_heart_rate_bpi, null));
+			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_cam, null));
+			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_microscope, null));
 			//mViews.add(layoutInflater.inflate(R.layout.nav_drawer_image, null));
 			//mViews.add(layoutInflater.inflate(R.layout.nav_drawer_video_conference, null));
 			//mViews.add(layoutInflater.inflate(R.layout.nav_drawer_microscope, null));
@@ -84,11 +87,11 @@ public class NavigationDrawer extends Activity
 			
 				case R.id.nav_drawer_home:
 					startActivity(new Intent(NavigationDrawer.this, MainActivity.class));
-				case R.id.nav_cam:
+				case R.id.nav_drawer_cam:
 					Intent camIntent = getPackageManager().getLaunchIntentForPackage("com.pas.webcam");
 					startActivity(camIntent);
 					break;
-				case R.id.nav_microscope:
+				case R.id.nav_drawer_microscope:
 					Intent micIntent = getPackageManager().getLaunchIntentForPackage("com.yuvalluzon.yourmagnifier");
 					startActivity(micIntent);
 					break;
@@ -125,15 +128,20 @@ public class NavigationDrawer extends Activity
 		mDrawerList.setOnItemClickListener(adapter);
 		//
 		android.app.ActionBar actionBar= getActionBar();
-		actionBar.setLogo(R.drawable.menu_navdrawer_icon);
+		actionBar.setLogo(R.drawable.action_bar_home);
 		actionBar.setHomeButtonEnabled(true);
 		actionBar.setDisplayHomeAsUpEnabled(true);
 		actionBar.setDisplayShowTitleEnabled(false);
+		actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#1E75CC")));
+
+		
+
 		//
 		mDrawerToggle= new ActionBarDrawerToggle(this, mDrawerLayout,
 				R.drawable.menu_navdrawer_icon, R.string.menu_open,
 				R.string.menu_close);
 		mDrawerLayout.setDrawerListener(mDrawerToggle);
+		
 		
 		
     }
