@@ -13,10 +13,8 @@
     <string name="nav_drawer_microscope">Microscope</string>
     <string name="nav_drawer_blood_pressure">Blood Pressure</string>
     <string name="nav_drawer_patient_info">Patient Info</string>
-<<<<<<< HEAD
     <string name="nav_drawer_share_image">Share Image</string>
     <string name="nav_drawer_help">Help</string>
-=======
     <string name="nav_drawer_send_image">Send Image</string>
     
    <!--  Help Menu --> 
@@ -32,6 +30,5 @@
   <string name="help_video">Click the navigation bar and the video conference will appear.</string> 
   <string name="help_microscope">Plug the phone into the microscope and the view will appear. You can zoom in at 
       any time, and stream this over video conference</string> 
->>>>>>> origin/master
 
 </resources>

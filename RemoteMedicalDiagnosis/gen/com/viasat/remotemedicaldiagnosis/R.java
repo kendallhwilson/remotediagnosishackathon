@@ -55,6 +55,7 @@ public final class R {
     }
     public static final class id {
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int action_settings=0x7f080015;
         public static final int container=0x7f080000;
         public static final int content_frame=0x7f08000c;
@@ -78,6 +79,8 @@ public final class R {
         public static final int wellness_bar=0x7f080002;
         public static final int yellow_block=0x7f080008;
 =======
+=======
+>>>>>>> origin/master
         public static final int action_settings=0x7f090024;
         public static final int container=0x7f090000;
         public static final int content_frame=0x7f09001e;
@@ -115,12 +118,16 @@ public final class R {
         public static final int sys_text=0x7f090003;
         public static final int wellness_bar=0x7f090002;
         public static final int yellow_block=0x7f090008;
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int blood_pressure=0x7f030001;
         public static final int fragment_main=0x7f030002;
+<<<<<<< HEAD
 <<<<<<< HEAD
         public static final int main=0x7f030003;
         public static final int nav_drawer_blood_pressure=0x7f030004;
@@ -131,12 +138,17 @@ public final class R {
         public static final int nav_drawer_patient_info=0x7f030009;
         public static final int nav_drawer_share_image=0x7f03000a;
 =======
+=======
+>>>>>>> origin/master
         public static final int help=0x7f030003;
         public static final int main=0x7f030004;
         public static final int nav_drawer_blood_pressure=0x7f030005;
         public static final int nav_drawer_cam=0x7f030006;
         public static final int nav_drawer_home=0x7f030007;
         public static final int nav_drawer_microscope=0x7f030008;
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
     }
     public static final class menu {
@@ -156,6 +168,7 @@ public final class R {
         /**   Navigation Drawer 
          */
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int menu_open=0x7f050003;
         public static final int nav_drawer_blood_pressure=0x7f050008;
         public static final int nav_drawer_cam=0x7f050006;
@@ -165,6 +178,8 @@ public final class R {
         public static final int nav_drawer_patient_info=0x7f050009;
         public static final int nav_drawer_share_image=0x7f05000a;
 =======
+=======
+>>>>>>> origin/master
         public static final int menu_open=0x7f060003;
         public static final int nav_drawer_blood_pressure=0x7f060008;
         public static final int nav_drawer_cam=0x7f060006;
@@ -175,6 +190,9 @@ public final class R {
         /**   Help Menu 
          */
         public static final int title_help=0x7f06000b;
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
     }
     public static final class style {
