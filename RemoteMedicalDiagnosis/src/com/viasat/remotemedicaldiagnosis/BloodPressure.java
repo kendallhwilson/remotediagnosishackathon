@@ -4,13 +4,6 @@ import java.util.Random;
 
 import com.viasat.remotemedicaldiagnosis.R;
 
-
-
-
-
-
-
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -50,11 +43,6 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
     	lightOrangeBlock = (ImageView) findViewById(R.id.light_orange_block);
     	yellowBlock = (ImageView) findViewById(R.id.yellow_block);
     	greenBlock = (ImageView) findViewById(R.id.green_block);
-    	
-    	
-        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams
-                (LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-        
         
     	Random random = new Random();
     	pulse = random.nextInt(50) + 50; //between 50-100
@@ -96,11 +84,6 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
     	diTextView.setText(Integer.toString(diastolic));
     	//pulseTextView.setText(pulse);
     	
-    	//places arrow in correct place
-    	//ImageView arrow = (ImageView) findViewById(R.id.arrow);
-    	//lp.addRule(RelativeLayout.RIGHT_OF, R.id.red_block);
-    	//arrow.setLayoutParams(lp);
-    	
     	/*
     	Button sendButton = (Button) findViewById(R.id.sendButton);
 		sendButton.setOnClickListener(new View.OnClickListener()
@@ -127,14 +110,24 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
     }
 
 	@Override
-	public void onGlobalLayout() {
-		// TODO Auto-generated method stub
+	public void onGlobalLayout() 
+	{
 		redBlock.getLayoutParams().height = bar.getHeight()/5 - 19;
 		darkOrangeBlock.getLayoutParams().height = bar.getHeight()/5 - 19;
 		lightOrangeBlock.getLayoutParams().height = bar.getHeight()/5 - 19;
 		yellowBlock.getLayoutParams().height = bar.getHeight()/5 - 19;
 		greenBlock.getLayoutParams().height = bar.getHeight()/5 - 19;
 		
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams
+                (LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        
+		int totalHeight = redBlock.getHeight() + darkOrangeBlock.getHeight() + lightOrangeBlock.getHeight()
+		 + yellowBlock.getHeight() + greenBlock.getHeight();
+		ImageView arrow = (ImageView) findViewById(R.id.arrow);
+		int heightArrow = (int) ((float) (systolic-100)*bar.getHeight()/100);
+		
+		LayoutParams currLP = (LayoutParams) arrow.getLayoutParams();
+		currLP.topMargin = bar.getHeight() -heightArrow - redBlock.getHeight()/3;		
 	}
     
 
