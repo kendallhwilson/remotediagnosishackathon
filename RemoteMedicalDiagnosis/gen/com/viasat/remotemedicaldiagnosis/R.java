@@ -20,6 +20,13 @@ public final class R {
          */
         public static final int activity_horizontal_margin=0x7f040000;
         public static final int activity_vertical_margin=0x7f040001;
+        public static final int help_margin_bottom=0x7f040005;
+        /**  Help Menu. 
+         */
+        public static final int help_margin_left=0x7f040002;
+        public static final int help_margin_right=0x7f040003;
+        public static final int help_margin_top=0x7f040004;
+        public static final int help_text_size=0x7f040006;
     }
     public static final class drawable {
         public static final int action_bar_home=0x7f020000;
