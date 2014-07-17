@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+	<RelativeLayout
+	    android:id="@+id/helpRelativeLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	
+	    <TextView
+	        android:id="@+id/help_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:text="@string/title_help"
+	        android:textStyle="bold"
+	        android:textSize="@dimen/help_text_size"
+	       android:textColor="@color/darkBlue" /> 
+	    
+	    <TextView
+	        android:id="@+id/help_textView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_title"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:text="@string/help_text" />
+	        
+	
+	    <ImageView
+	        android:id="@+id/help_patient_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_textView"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:src="@drawable/nav_drawer_cam" />
+	    
+	    <TextView
+	        android:id="@+id/help_patient_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_textView"
+	        android:layout_toRightOf="@+id/help_patient_icon"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:layout_marginRight="@dimen/help_margin_right"
+	        android:text="@string/nav_drawer_patient_info"
+	        android:textStyle="bold"
+	        android:textColor="@color/darkBlue"  />
+	    
+	    <TextView
+	        android:id="@+id/help_patient_textView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_patient_title"
+	        android:layout_toRightOf="@+id/help_patient_icon"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:layout_marginRight="@dimen/help_margin_right"
+	        android:text="@string/help_patient_text" />
+	    
+	    <ImageView
+	        android:id="@+id/help_blood_pressure_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_patient_textView"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:src="@drawable/nav_drawer_blood_pressure" />
+	   	
+	    <TextView
+	        android:id="@+id/help_blood_pressure_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_patient_textView"
+	        android:layout_toRightOf="@+id/help_blood_pressure_icon"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:layout_marginRight="@dimen/help_margin_right"
+	        android:text="@string/nav_drawer_blood_pressure"
+	        android:textStyle="bold"
+	         android:textColor="@color/darkBlue"  />
+	    
+	    <TextView
+	        android:id="@+id/help_blood_pressure_textView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_blood_pressure_title"
+	        android:layout_toRightOf="@+id/help_blood_pressure_icon"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:layout_marginRight="@dimen/help_margin_right"
+	        android:text="@string/help_blood_pressure" />
+	    
+	    <ImageView
+	        android:id="@+id/help_send_image_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_blood_pressure_textView"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:src="@drawable/nav_drawer_cam" />
+	   	
+	    <TextView
+	        android:id="@+id/help_send_image_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_blood_pressure_textView"
+	        android:layout_toRightOf="@+id/help_send_image_icon"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:layout_marginRight="@dimen/help_margin_right"
+	        android:text="@string/nav_drawer_send_image"
+	        android:textStyle="bold"
+	         android:textColor="@color/darkBlue"  />
+	    
+	    <TextView
+	        android:id="@+id/help_send_image_textView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_send_image_title"
+	        android:layout_toRightOf="@+id/help_send_image_icon"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:layout_marginRight="@dimen/help_margin_right"
+	        android:text="@string/help_send_image" />
+	    
+	   	<ImageView
+	        android:id="@+id/help_video_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_send_image_textView"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:src="@drawable/nav_drawer_cam" />
+	   	
+	    <TextView
+	        android:id="@+id/help_video_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_send_image_textView"
+	        android:layout_toRightOf="@+id/help_send_image_icon"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:layout_marginRight="@dimen/help_margin_right"
+	        android:text="@string/nav_drawer_cam"
+	        android:textStyle="bold"
+	         android:textColor="@color/darkBlue" />
+	    
+	    <TextView
+	        android:id="@+id/help_video_textView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_video_title"
+	        android:layout_toRightOf="@+id/help_video_icon"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:layout_marginRight="@dimen/help_margin_right"
+	        android:layout_marginBottom="@dimen/help_margin_bottom"
+	        android:text="@string/help_video" />
+	    
+	   	<ImageView
+	        android:id="@+id/help_microscope_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_video_textView"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:src="@drawable/nav_drawer_microscope" />
+	   	
+	    <TextView
+	        android:id="@+id/help_microscope_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_video_textView"
+	        android:layout_toRightOf="@+id/help_video_icon"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:layout_marginRight="@dimen/help_margin_right"
+	        android:text="@string/nav_drawer_microscope"
+	        android:textStyle="bold"
+	        android:textColor="@color/darkBlue" />
+	    
+	    <TextView
+	        android:id="@+id/help_microscope_textView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/help_microscope_title"
+	        android:layout_toRightOf="@+id/help_microscope_icon"
+	        android:layout_marginTop="@dimen/help_margin_top"
+	        android:layout_marginLeft="@dimen/help_margin_left"
+	        android:layout_marginRight="@dimen/help_margin_right"
+	        android:layout_marginBottom="@dimen/help_margin_bottom"
+	        android:text="@string/help_microscope" />	
+	    
+	
+	</RelativeLayout>
+
+</ScrollView>
+
