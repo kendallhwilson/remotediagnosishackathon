@@ -9,8 +9,11 @@
     <string name="menu_open">menu open</string>
     <string name="menu_close">menu close</string>
     <string name="nav_drawer_home">Home</string>
-    <string name="nav_drawer_cam">Web Camera</string>
+    <string name="nav_drawer_cam">Video Conference</string>
     <string name="nav_drawer_microscope">Microscope</string>
     <string name="nav_drawer_blood_pressure">Blood Pressure</string>
+    <string name="nav_drawer_patient_info">Patient Info</string>
+    <string name="nav_drawer_share_image">Share Image</string>
+    <string name="nav_drawer_help">Help</string>
 
 </resources>

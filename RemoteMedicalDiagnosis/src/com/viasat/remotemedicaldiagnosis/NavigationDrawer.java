@@ -51,10 +51,13 @@ public class NavigationDrawer extends Activity
 			LayoutInflater layoutInflater= (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
 
 			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_home, null));
+			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_patient_info, null));
+			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_blood_pressure, null));
+			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_share_image, null));
 			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_cam, null));
 			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_microscope, null));
-			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_blood_pressure, null));
-			
+			mViews.add(layoutInflater.inflate(R.layout.nav_drawer_help, null));
+	
 		}
 		@Override
 		public int getCount()
@@ -96,10 +99,10 @@ public class NavigationDrawer extends Activity
 				case R.id.nav_drawer_blood_pressure:
 					startActivity(new Intent(NavigationDrawer.this, BloodPressure.class));
 					break;
-//				case R.id.nav_patient_info:
-//					startActivity(new Intent(NavigationDrawer.this, PatientInfo.class));
-//				case R.id.nav_drawer_heart_rate_bpi:
-//					startActivity(new Intent(NavigationDrawer.this, HeartRateBPI.class));
+				case R.id.nav_drawer_patient_info:
+					startActivity(new Intent(NavigationDrawer.this, Patient.class));
+				case R.id.nav_drawer_help:
+					startActivity(new Intent(NavigationDrawer.this, Help.class));
 //				case R.id.nav_drawer_image:
 //					startActivity(new Intent(NavigationDrawer.this, Image.class));
 //				case R.id.nav_drawer_video_conference:
