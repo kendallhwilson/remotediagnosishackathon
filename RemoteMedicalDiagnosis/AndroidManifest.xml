@@ -25,6 +25,9 @@
         <activity
             android:name="com.viasat.remotemedicaldiagnosis.BloodPressure" >
         </activity>
+        <activity
+            android:name="com.viasat.remotemedicaldiagnosis.Help" >
+        </activity>
         
     </application>
 

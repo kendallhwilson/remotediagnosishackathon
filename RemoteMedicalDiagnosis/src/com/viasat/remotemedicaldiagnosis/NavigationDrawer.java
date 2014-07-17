@@ -137,8 +137,6 @@ public class NavigationDrawer extends Activity
 		actionBar.setDisplayShowTitleEnabled(false);
 		actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#1E75CC")));
 
-		
-
 		//
 		mDrawerToggle= new ActionBarDrawerToggle(this, mDrawerLayout,
 				R.drawable.menu_navdrawer_icon, R.string.menu_open,
@@ -177,5 +175,3 @@ public class NavigationDrawer extends Activity
  
 	
 }
-		 
-
