@@ -84,7 +84,8 @@ public class NavigationDrawer extends Activity
 			{
 			
 				case R.id.nav_drawer_home:
-					startActivity(new Intent(NavigationDrawer.this, MainActivity.class));
+					startActivity(new Intent(NavigationDrawer.this, Help.class));
+					break;
 				case R.id.nav_drawer_cam:
 					Intent camIntent = getPackageManager().getLaunchIntentForPackage("com.pas.webcam");
 					startActivity(camIntent);

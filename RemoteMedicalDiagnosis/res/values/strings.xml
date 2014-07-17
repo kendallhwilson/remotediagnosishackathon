@@ -12,5 +12,21 @@
     <string name="nav_drawer_cam">Web Camera</string>
     <string name="nav_drawer_microscope">Microscope</string>
     <string name="nav_drawer_blood_pressure">Blood Pressure</string>
+    <string name="nav_drawer_patient_info">Patient Info</string>
+    <string name="nav_drawer_send_image">Send Image</string>
+    
+   <!--  Help Menu --> 
+  <string name="title_help">Help</string> 
+  <string name="help_text">To start, select the navigation bar on the left and click on the Patient Info item. 
+      Use each device by clicking the corresponding option in the navigation drawer.</string> 
+  <string name="help_patient_text">Enter in the corresponding patient information. Click send to send it to the
+       doctor, or save to save the information in our records.</string> 
+  <string name="help_blood_pressure">Plug the phone into the blood pressure moniter, and wait for the numbers to 
+      appear. You can then send the information.</string> 
+  <string name="help_send_image">Plug the phone into whichever device you want the picture from. Wait for it to 
+      appear on screen, and click send.</string> 
+  <string name="help_video">Click the navigation bar and the video conference will appear.</string> 
+  <string name="help_microscope">Plug the phone into the microscope and the view will appear. You can zoom in at 
+      any time, and stream this over video conference</string> 
 
 </resources>
