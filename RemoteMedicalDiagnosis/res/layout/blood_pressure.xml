@@ -2,12 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:color="@color/white"
     android:orientation="vertical" >
     
     <RelativeLayout
         android:id="@+id/data_box"
         android:layout_width="fill_parent"
 	    android:layout_height="fill_parent"
+	    android:layout_above="@+id/sendButton"
 	    android:layout_margin="15dp"
 	    android:layout_toRightOf="@+id/arrow"
         android:background="@drawable/blood_background" >
@@ -31,6 +33,7 @@
 	    android:id="@+id/wellness_bar"
         android:layout_width="30dp"
 	    android:layout_height="match_parent"
+	    android:layout_above="@+id/sendButton"
 	    android:layout_marginTop="15dp"
 	    android:layout_marginLeft="15dp"
 	    android:layout_marginBottom="15dp"
@@ -85,5 +88,16 @@
     	android:layout_toRightOf="@+id/wellness_bar"
         android:src="@drawable/arrow_sans_left"/>
     
+	 <Button 
+	     android:id="@+id/sendButton"
+	     style="@style/button"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:background="@layout/button"
+	     android:layout_alignParentBottom="true"
+	     android:layout_marginRight="5dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginBottom="5dp"
+	     android:text="Send"/>
 
 </RelativeLayout>
