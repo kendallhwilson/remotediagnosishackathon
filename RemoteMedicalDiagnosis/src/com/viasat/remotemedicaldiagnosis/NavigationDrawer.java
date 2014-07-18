@@ -102,13 +102,15 @@ public class NavigationDrawer extends Activity
 					break;
 				case R.id.nav_drawer_patient_info:
 					startActivity(new Intent(NavigationDrawer.this, Patient.class));
-					break;
 				case R.id.nav_drawer_help:
 					startActivity(new Intent(NavigationDrawer.this, Help.class));
-					break;
-			case R.id.nav_drawer_share_image:
+				case R.id.nav_drawer_image:
 					startActivity(new Intent(NavigationDrawer.this, SendImage.class));
 					break;
+//				case R.id.nav_drawer_video_conference:
+//					startActivity(new Intent(NavigationDrawer.this, VideoConference.class));
+//				case R.id.nav_drawer_microscope:
+//					startActivity(new Intent(NavigationDrawer.this, Microscope.class));
 			}
 		}
 	}
@@ -171,7 +173,4 @@ public class NavigationDrawer extends Activity
 		}
 		return super.onOptionsItemSelected(item);
 	}
- 
- 
-	
 }

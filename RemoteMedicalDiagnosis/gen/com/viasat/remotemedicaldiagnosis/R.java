@@ -12,7 +12,13 @@ public final class R {
     }
     public static final class color {
         public static final int darkBlue=0x7f040001;
+        public static final int darkOrange=0x7f040006;
+        public static final int gray=0x7f040002;
+        public static final int green=0x7f040003;
+        public static final int lightOrange=0x7f040005;
+        public static final int red=0x7f040007;
         public static final int white=0x7f040000;
+        public static final int yellow=0x7f040004;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -24,82 +30,108 @@ public final class R {
          */
         public static final int activity_horizontal_margin=0x7f050000;
         public static final int activity_vertical_margin=0x7f050001;
-        public static final int help_margin_bottom=0x7f050005;
+        public static final int button_width=0x7f050002;
+        public static final int help_margin_bottom=0x7f050006;
         /**  Help Menu. 
          */
-        public static final int help_margin_left=0x7f050002;
-        public static final int help_margin_right=0x7f050003;
-        public static final int help_margin_top=0x7f050004;
-        public static final int help_text_size=0x7f050006;
+        public static final int help_margin_left=0x7f050003;
+        public static final int help_margin_right=0x7f050004;
+        public static final int help_margin_top=0x7f050005;
+        public static final int help_text_size=0x7f050007;
+        public static final int title_text_size=0x7f050008;
     }
     public static final class drawable {
         public static final int action_bar_home=0x7f020000;
         public static final int arrow_sans_left=0x7f020001;
         public static final int blood_background=0x7f020002;
-        public static final int dark_orange_block=0x7f020003;
-        public static final int drawer_shadow=0x7f020004;
-        public static final int gray_background=0x7f020005;
-        public static final int green_block=0x7f020006;
-        public static final int ic_launcher=0x7f020007;
-        public static final int light_orange_block=0x7f020008;
-        public static final int menu_navdrawer_icon=0x7f020009;
-        public static final int nav_drawer_blood_pressure=0x7f02000a;
-        public static final int nav_drawer_cam=0x7f02000b;
-        public static final int nav_drawer_help=0x7f02000c;
-        public static final int nav_drawer_home=0x7f02000d;
-        public static final int nav_drawer_microscope=0x7f02000e;
-        public static final int nav_drawer_patient_info=0x7f02000f;
-        public static final int nav_drawer_share_image=0x7f020010;
-        public static final int red_block=0x7f020011;
-        public static final int wellness_full_bar=0x7f020012;
-        public static final int yellow_block=0x7f020013;
+        public static final int blue_background=0x7f020003;
+        public static final int dark_orange_block=0x7f020004;
+        public static final int drawer_shadow=0x7f020005;
+        public static final int gray_background=0x7f020006;
+        public static final int green_block=0x7f020007;
+        public static final int hor_line=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int light_orange_block=0x7f02000a;
+        public static final int menu_navdrawer_icon=0x7f02000b;
+        public static final int nav_drawer_blood_pressure=0x7f02000c;
+        public static final int nav_drawer_cam=0x7f02000d;
+        public static final int nav_drawer_help=0x7f02000e;
+        public static final int nav_drawer_home=0x7f02000f;
+        public static final int nav_drawer_microscope=0x7f020010;
+        public static final int nav_drawer_patient_info=0x7f020011;
+        public static final int nav_drawer_share_image=0x7f020012;
+        public static final int red_block=0x7f020013;
+        public static final int ver_line=0x7f020014;
+        public static final int wellness_full_bar=0x7f020015;
+        public static final int xray=0x7f020016;
+        public static final int xray2=0x7f020017;
+        public static final int yellow_block=0x7f020018;
     }
     public static final class id {
-        public static final int action_settings=0x7f09002c;
+        public static final int action_settings=0x7f09003f;
         public static final int arrow=0x7f090003;
-        public static final int bac_dim_layout=0x7f09000d;
+        public static final int bac_dim_layout=0x7f09001c;
+        public static final int blood_title=0x7f090001;
         public static final int container=0x7f090000;
-        public static final int content_frame=0x7f090023;
-        public static final int dark_orange_block=0x7f090009;
-        public static final int data_box=0x7f090001;
-        public static final int dia_num=0x7f090005;
-        public static final int drawer_layout=0x7f090021;
-        public static final int green_block=0x7f09000c;
-        public static final int helpRelativeLayout=0x7f09000f;
-        public static final int help_blood_pressure_icon=0x7f090015;
-        public static final int help_blood_pressure_textView=0x7f090017;
-        public static final int help_blood_pressure_title=0x7f090016;
-        public static final int help_microscope_icon=0x7f09001e;
-        public static final int help_microscope_textView=0x7f090020;
-        public static final int help_microscope_title=0x7f09001f;
-        public static final int help_patient_icon=0x7f090012;
-        public static final int help_patient_textView=0x7f090014;
-        public static final int help_patient_title=0x7f090013;
-        public static final int help_send_image_icon=0x7f090018;
-        public static final int help_send_image_textView=0x7f09001a;
-        public static final int help_send_image_title=0x7f090019;
-        public static final int help_textView=0x7f090011;
-        public static final int help_title=0x7f090010;
-        public static final int help_video_icon=0x7f09001b;
-        public static final int help_video_textView=0x7f09001d;
-        public static final int help_video_title=0x7f09001c;
-        public static final int left_drawer=0x7f090024;
-        public static final int light_orange_block=0x7f09000a;
-        public static final int nav_drawer_blood_pressure=0x7f090025;
-        public static final int nav_drawer_cam=0x7f090026;
-        public static final int nav_drawer_help=0x7f090027;
-        public static final int nav_drawer_home=0x7f090028;
-        public static final int nav_drawer_microscope=0x7f090029;
-        public static final int nav_drawer_patient_info=0x7f09002a;
-        public static final int nav_drawer_share_image=0x7f09002b;
-        public static final int pager=0x7f090022;
-        public static final int progress_bar=0x7f09000e;
-        public static final int red_block=0x7f090008;
-        public static final int sendButton=0x7f090002;
+        public static final int content_frame=0x7f090032;
+        public static final int dark_orange_block=0x7f090018;
+        public static final int data_box=0x7f090002;
+        public static final int dia_num=0x7f090008;
+        public static final int dia_text=0x7f090006;
+        public static final int drawer_layout=0x7f090030;
+        public static final int green_block=0x7f09001b;
+        public static final int helpRelativeLayout=0x7f09001e;
+        public static final int help_blood_pressure_icon=0x7f090024;
+        public static final int help_blood_pressure_textView=0x7f090026;
+        public static final int help_blood_pressure_title=0x7f090025;
+        public static final int help_microscope_icon=0x7f09002d;
+        public static final int help_microscope_textView=0x7f09002f;
+        public static final int help_microscope_title=0x7f09002e;
+        public static final int help_patient_icon=0x7f090021;
+        public static final int help_patient_textView=0x7f090023;
+        public static final int help_patient_title=0x7f090022;
+        public static final int help_send_image_icon=0x7f090027;
+        public static final int help_send_image_textView=0x7f090029;
+        public static final int help_send_image_title=0x7f090028;
+        public static final int help_textView=0x7f090020;
+        public static final int help_title=0x7f09001f;
+        public static final int help_video_icon=0x7f09002a;
+        public static final int help_video_textView=0x7f09002c;
+        public static final int help_video_title=0x7f09002b;
+        public static final int hg1_text=0x7f090005;
+        public static final int hg2_text=0x7f090007;
+        public static final int hg3_text=0x7f09000a;
+        public static final int high_stage1_text=0x7f090013;
+        public static final int high_stage2_text=0x7f090014;
+        public static final int horzLine=0x7f09000c;
+        public static final int hypertensive_crisis_text=0x7f090015;
+        public static final int image_instructionView=0x7f09003c;
+        public static final int image_titleView=0x7f09003b;
+        public static final int left_drawer=0x7f090033;
+        public static final int light_orange_block=0x7f090019;
+        public static final int nav_drawer_blood_pressure=0x7f090034;
+        public static final int nav_drawer_cam=0x7f090035;
+        public static final int nav_drawer_help=0x7f090036;
+        public static final int nav_drawer_home=0x7f090037;
+        public static final int nav_drawer_microscope=0x7f090038;
+        public static final int nav_drawer_patient_info=0x7f090039;
+        public static final int nav_drawer_share_image=0x7f09003a;
+        public static final int normal_text=0x7f090011;
+        public static final int pager=0x7f090031;
+        public static final int prehypertension_text=0x7f090012;
+        public static final int progress_bar=0x7f09001d;
+        public static final int pulse_num=0x7f09000b;
+        public static final int pulse_text=0x7f090009;
+        public static final int red_block=0x7f090017;
+        public static final int result_box=0x7f09000e;
+        public static final int result_text=0x7f090010;
+        public static final int sendButton=0x7f09000f;
+        public static final int send_button=0x7f09003e;
         public static final int sys_num=0x7f090004;
-        public static final int sys_text=0x7f090006;
-        public static final int wellness_bar=0x7f090007;
-        public static final int yellow_block=0x7f09000b;
+        public static final int vertLine=0x7f09000d;
+        public static final int wellness_bar=0x7f090016;
+        public static final int xrayView=0x7f09003d;
+        public static final int yellow_block=0x7f09001a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -115,6 +147,7 @@ public final class R {
         public static final int nav_drawer_microscope=0x7f03000a;
         public static final int nav_drawer_patient_info=0x7f03000b;
         public static final int nav_drawer_share_image=0x7f03000c;
+        public static final int send_image=0x7f03000d;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -129,6 +162,10 @@ public final class R {
         public static final int help_send_image=0x7f060011;
         public static final int help_text=0x7f06000e;
         public static final int help_video=0x7f060012;
+        public static final int image_instructions=0x7f060015;
+        /**  Send Image 
+         */
+        public static final int image_title=0x7f060014;
         public static final int menu_close=0x7f060004;
         /**   Navigation Drawer 
          */
@@ -141,9 +178,11 @@ public final class R {
         public static final int nav_drawer_patient_info=0x7f060009;
         public static final int nav_drawer_send_image=0x7f06000c;
         public static final int nav_drawer_share_image=0x7f06000a;
+        public static final int send_button_text=0x7f060016;
         /**   Help Menu 
          */
         public static final int title_help=0x7f06000d;
+        public static final int upload_button_text=0x7f060017;
     }
     public static final class style {
         /** 
