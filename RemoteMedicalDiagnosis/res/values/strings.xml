@@ -33,7 +33,7 @@
       
   <!-- Send Image -->
   <string name="image_title">Share an Image</string> 
-  <string name="image_instructions">Plug the phone into the device. When you are ready, push upload. Push send to 
+  <string name="image_instructions">Upload your xray. Push send to 
       share image with the doctor and place in medical records.</string> 
   <string name="send_button_text">Send Image</string> 
   <string name="upload_button_text">Upload Image</string> 
