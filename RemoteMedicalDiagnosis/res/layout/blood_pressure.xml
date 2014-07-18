@@ -27,7 +27,7 @@
         android:background="@drawable/blue_background" >
 	    
 	    <TextView 
-	        android:id="@+id/sys_num"
+	        android:id="@+id/sys_text"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_above="@+id/hg1_text"
@@ -66,19 +66,19 @@
 	        android:id="@+id/pulse_text"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_above="@+id/hg3_text"
+	        android:layout_above="@+id/bpm_text"
 	        android:layout_marginLeft="15dp"
 	        android:textSize="30sp"
 	        android:text="PULSE"/>
 	    
 	    <TextView 
-	        android:id="@+id/hg3_text"
+	        android:id="@+id/bpm_text"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_alignBottom="@+id/pulse_num"
 	        android:layout_marginLeft="15dp"
 	        android:textSize="15sp"
-	        android:text="mmHg"/>
+	        android:text="BPM"/>
 	    
 	    <TextView 
 	        android:id="@+id/sys_num"
@@ -87,8 +87,7 @@
 	        android:layout_alignParentRight="true"
 	        android:layout_marginTop="15dp"
 	        android:layout_marginRight="15dp"
-	        android:textSize="50sp"
-	        android:text="120"/>
+	        android:textSize="50sp"/>
 
 	    
 	    <TextView 
@@ -99,8 +98,7 @@
 	        android:layout_marginTop="15dp"
 	        android:layout_marginRight="15dp"
 	        android:layout_below="@+id/sys_num"
-	        android:textSize="50sp"
-	        android:text="80"/>
+	        android:textSize="50sp"/>
 	    
 	    <TextView 
 	        android:id="@+id/pulse_num"
@@ -110,8 +108,7 @@
 	        android:layout_below="@+id/horzLine"
 	        android:layout_marginRight="15dp"
 	        android:layout_marginBottom="15dp"
-	        android:textSize="50sp"
-	        android:text="72"/>
+	        android:textSize="50sp"/>
 	    
 	    <ImageView 
 	        android:id="@+id/horzLine"
