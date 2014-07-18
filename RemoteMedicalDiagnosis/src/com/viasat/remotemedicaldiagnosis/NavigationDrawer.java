@@ -104,6 +104,7 @@ public class NavigationDrawer extends Activity
 					startActivity(new Intent(NavigationDrawer.this, Patient.class));
 				case R.id.nav_drawer_help:
 					startActivity(new Intent(NavigationDrawer.this, Help.class));
+					break;
 				case R.id.nav_drawer_share_image:
 					startActivity(new Intent(NavigationDrawer.this, SendImage.class));
 					break;
