@@ -30,5 +30,12 @@
   <string name="help_video">Click the navigation bar and the video conference will appear.</string> 
   <string name="help_microscope">Plug the phone into the microscope and the view will appear. You can zoom in at 
       any time, and stream this over video conference</string> 
+      
+  <!-- Send Image -->
+  <string name="image_title">Share an Image</string> 
+  <string name="image_instructions">Plug the phone into the device. When you are ready, push upload. Push send to 
+      share image with the doctor and place in medical records.</string> 
+  <string name="send_button_text">Send Image</string> 
+  <string name="upload_button_text">Upload Image</string> 
 
 </resources>

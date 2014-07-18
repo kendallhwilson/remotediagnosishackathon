@@ -88,6 +88,7 @@ public class NavigationDrawer extends Activity
 			
 				case R.id.nav_drawer_home:
 					startActivity(new Intent(NavigationDrawer.this, MainActivity.class));
+					break;
 				case R.id.nav_drawer_cam:
 					Intent camIntent = getPackageManager().getLaunchIntentForPackage("com.pas.webcam");
 					startActivity(camIntent);
@@ -103,8 +104,9 @@ public class NavigationDrawer extends Activity
 					startActivity(new Intent(NavigationDrawer.this, Patient.class));
 				case R.id.nav_drawer_help:
 					startActivity(new Intent(NavigationDrawer.this, Help.class));
-//				case R.id.nav_drawer_image:
-//					startActivity(new Intent(NavigationDrawer.this, Image.class));
+				case R.id.nav_drawer_share_image:
+					startActivity(new Intent(NavigationDrawer.this, SendImage.class));
+					break;
 //				case R.id.nav_drawer_video_conference:
 //					startActivity(new Intent(NavigationDrawer.this, VideoConference.class));
 //				case R.id.nav_drawer_microscope:
@@ -171,7 +173,4 @@ public class NavigationDrawer extends Activity
 		}
 		return super.onOptionsItemSelected(item);
 	}
- 
- 
-	
 }
