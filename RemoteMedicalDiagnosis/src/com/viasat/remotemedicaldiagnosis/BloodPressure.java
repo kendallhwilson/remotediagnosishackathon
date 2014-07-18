@@ -1,11 +1,15 @@
 package com.viasat.remotemedicaldiagnosis;
 
 import java.util.Random;
-
 import com.viasat.remotemedicaldiagnosis.R;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnLayoutChangeListener;
 import android.view.ViewTreeObserver;
@@ -14,7 +18,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 
@@ -75,10 +81,6 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
     		diastolic = random.nextInt(10) + 70; //between 70-80
     	}
     	
-    	TextView sysTextView = (TextView) findViewById(R.id.sys_num);
-    	TextView diTextView = (TextView) findViewById(R.id.dia_num);
-    	//TextView pulseTextView = (TextView) findViewById(R.id.heart_rate);
-    	
     	if (E.patient != null)
     	{
     		E.patient.setDiastolic(diastolic);
@@ -86,32 +88,46 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
     		//E.patient.setPulse(pulse);
     	}
     	
-    	sysTextView.setText(Integer.toString(systolic));
-    	diTextView.setText(Integer.toString(diastolic));
-    	//pulseTextView.setText(pulse);
-    	
-    	/*
     	Button sendButton = (Button) findViewById(R.id.sendButton);
 		sendButton.setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
 			{
-				try 
-				{
-					//must use separate to send context
-					sendInfo();
-				} 
-				catch (ActivityNotFoundException activityException) 
-				{
-				    Log.e("ViaSat", "Call failed", activityException);
-				}
+				//must use separate to send context
+				sendInfo();
 			}
 		});
-		*/
+		
     	diastolic = random.nextInt(60) + 60;
     	final ViewTreeObserver vto = bar.getViewTreeObserver();
     	vto.addOnGlobalLayoutListener(this);
+    	
+		 //Timer
+        CountDownTimer timer = new CountDownTimer(3000, 1000) 
+        {
+            ProgressBar mProgress = (ProgressBar) findViewById(R.id.progress_bar);
+            RelativeLayout dimLayout = (RelativeLayout) findViewById( R.id.bac_dim_layout);
+        	
+            public void onTick(long millisUntilFinished) 
+            {
+            	dimLayout.setVisibility(View.VISIBLE);
+            	mProgress.setVisibility(ProgressBar.VISIBLE);
+            }
+            public void onFinish()
+            {
+            	dimLayout.setVisibility(View.GONE);
+            	mProgress.setVisibility(ProgressBar.GONE);
+            	TextView sysTextView = (TextView) findViewById(R.id.sys_num);
+            	TextView diTextView = (TextView) findViewById(R.id.dia_num);
+            	//TextView pulseTextView = (TextView) findViewById(R.id.heart_rate);
+            	sysTextView.setText(Integer.toString(systolic));
+            	diTextView.setText(Integer.toString(diastolic));
+            	//pulseTextView.setText(pulse);
+            }
+        };
+        
+        timer.start();
     	
     }
 
@@ -127,8 +143,6 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams
                 (LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
         
-		int totalHeight = redBlock.getHeight() + darkOrangeBlock.getHeight() + lightOrangeBlock.getHeight()
-		 + yellowBlock.getHeight() + greenBlock.getHeight();
 		ImageView arrow = (ImageView) findViewById(R.id.arrow);
 		int heightArrow = (int) ((float) (systolic-100)*bar.getHeight()/100);
 		
