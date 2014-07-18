@@ -36,6 +36,11 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
 	ImageView lightOrangeBlock;
 	ImageView yellowBlock;
 	ImageView greenBlock;
+	TextView normal;
+	TextView prehypertension;
+	TextView high_stage1;
+	TextView high_stage2;
+	TextView hypertensive_crisis;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) 
@@ -50,11 +55,11 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
     	yellowBlock = (ImageView) findViewById(R.id.yellow_block);
     	greenBlock = (ImageView) findViewById(R.id.green_block);
     	
-    	TextView normal = (TextView) findViewById(R.id.normal_text);
-    	TextView prehypertension = (TextView) findViewById(R.id.prehypertension_text);
-    	TextView high_stage1 = (TextView) findViewById(R.id.high_stage1_text);
-    	TextView high_stage2 = (TextView) findViewById(R.id.high_stage2_text);
-    	TextView hypertensive_crisis = (TextView) findViewById(R.id.hypertensive_crisis_text);
+    	normal = (TextView) findViewById(R.id.normal_text);
+    	prehypertension = (TextView) findViewById(R.id.prehypertension_text);
+    	high_stage1 = (TextView) findViewById(R.id.high_stage1_text);
+    	high_stage2 = (TextView) findViewById(R.id.high_stage2_text);
+    	hypertensive_crisis = (TextView) findViewById(R.id.hypertensive_crisis_text);
         
     	Random random = new Random();
     	pulse = random.nextInt(50) + 50; //between 50-100
@@ -85,7 +90,7 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
     	{
     		E.patient.setDiastolic(diastolic);
     		E.patient.setSystolic(systolic);
-    		//E.patient.setPulse(pulse);
+    		E.patient.setPulse(pulse);
     	}
     	
     	Button sendButton = (Button) findViewById(R.id.sendButton);
@@ -98,8 +103,7 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
 				sendInfo();
 			}
 		});
-		
-    	diastolic = random.nextInt(60) + 60;
+	
     	final ViewTreeObserver vto = bar.getViewTreeObserver();
     	vto.addOnGlobalLayoutListener(this);
     	
@@ -120,10 +124,31 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
             	mProgress.setVisibility(ProgressBar.GONE);
             	TextView sysTextView = (TextView) findViewById(R.id.sys_num);
             	TextView diTextView = (TextView) findViewById(R.id.dia_num);
-            	//TextView pulseTextView = (TextView) findViewById(R.id.heart_rate);
+            	TextView pulseTextView = (TextView) findViewById(R.id.pulse_num);
             	sysTextView.setText(Integer.toString(systolic));
             	diTextView.setText(Integer.toString(diastolic));
-            	//pulseTextView.setText(pulse);
+            	pulseTextView.setText(Integer.toString(pulse));
+            	if (systolic > 180)
+            	{
+            		hypertensive_crisis.setVisibility(View.VISIBLE);
+            	}
+            	else if (systolic > 160)
+            	{
+            		high_stage2.setVisibility(View.VISIBLE);
+            	}
+            	else if (systolic > 140)
+
+            	{
+            		high_stage1.setVisibility(View.VISIBLE);
+            	}
+            	else if (systolic > 120)
+            	{
+            		prehypertension.setVisibility(View.VISIBLE);
+            	}
+            	else
+            	{
+            		normal.setVisibility(View.VISIBLE);
+            	}
             }
         };
         
