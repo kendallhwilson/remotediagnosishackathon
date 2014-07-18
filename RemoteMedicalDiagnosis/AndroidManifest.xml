@@ -20,7 +20,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.viasat.remotemedicaldiagnosis.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,17 +29,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.viasat.remotemedicaldiagnosis.BloodPressure" >
+            android:name="com.viasat.remotemedicaldiagnosis.BloodPressure"
+            android:screenOrientation="portrait" >
         </activity>
          <activity
             android:name="com.viasat.remotemedicaldiagnosis.PatientInfo"
-            android:windowSoftInputMode="adjustPan" >
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.viasat.remotemedicaldiagnosis.Help" >
+            android:name="com.viasat.remotemedicaldiagnosis.Help"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.viasat.remotemedicaldiagnosis.SendImage" >
+            android:name="com.viasat.remotemedicaldiagnosis.SendImage"
+            android:screenOrientation="portrait" >
         </activity>
         
     </application>

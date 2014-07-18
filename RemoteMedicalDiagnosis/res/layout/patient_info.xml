@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="@dimen/info_padding" >
+            android:layout_margin="10dp" >
 
             <TableRow
                 android:id="@+id/tablerow1"
@@ -55,7 +55,7 @@
 
                     <EditText
                         android:id="@+id/patient_birthday"
-                        android:layout_width="wrap_content"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/info_patient_birthday"
                         android:inputType="textAutoComplete"
@@ -71,7 +71,8 @@
                         android:contentDescription="Select Date"
                         android:onClick="startDatePicker"
                         android:padding="10sp"
-                        android:src="@drawable/calendar" />
+                        android:src="@drawable/calendar" 
+                        android:visibility="gone"/>
                 </RelativeLayout>
             </TableRow>
 
@@ -96,13 +97,15 @@
                         android:id="@+id/male"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Male" />
+                        android:text="Male"
+                        android:onClick="onRadioButtonClicked" />
 
                     <RadioButton
                         android:id="@+id/female"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Female" />
+                        android:text="Female"
+                        android:onClick="onRadioButtonClicked" />
                 </RadioGroup>
             </TableRow>
 
@@ -143,7 +146,7 @@
                     android:id="@+id/PatientMedications"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter Medications"
+                    android:hint="Enter Meds"
                     android:inputType="textAutoComplete"
                     android:textSize="@dimen/info_text" />
             </TableRow>
@@ -192,12 +195,16 @@
         </TableLayout>
     </ScrollView>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@layout/button"
-        android:padding="@dimen/info_padding"
-        android:text="@string/info_send" />
+     <Button 
+	     android:id="@+id/sendButton"
+	     style="@style/button"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:background="@layout/button"
+	     android:layout_alignParentBottom="true"
+	     android:layout_marginRight="5dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginBottom="5dp"
+	     android:text="Send"/>
 
 </RelativeLayout>

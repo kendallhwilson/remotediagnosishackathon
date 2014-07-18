@@ -29,7 +29,7 @@ public class SendImage extends NavigationDrawer
 			{
 				if (photoUploaded)
 				{
-					E.patient = new Patient("K", "W", "bday", "gender", "Reason", "surgery", "Drugs", "allergies");
+					E.patient = new Patient("K", "bday", "gender", "Reason", "surgery", "Drugs", "allergies");
 					sendImage();
 				}
 				photoUploaded = !photoUploaded;
