@@ -174,3 +174,4 @@ public class NavigationDrawer extends Activity
 		}
 		return super.onOptionsItemSelected(item);
 	}
+}
