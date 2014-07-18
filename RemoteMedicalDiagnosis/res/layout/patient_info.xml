@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableLayout
+            android:id="@+id/summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/info_padding" >
+
+            <TableRow
+                android:id="@+id/tablerow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_name"
+                    android:textSize="@dimen/info_text" />
+
+                <EditText
+                    android:id="@+id/patient_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/info_patient_name"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/info_text" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_birthday"
+                    android:textSize="@dimen/info_text" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/patient_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/info_patient_birthday"
+                        android:inputType="textAutoComplete"
+                        android:textSize="@dimen/info_text" />
+
+                    <ImageButton
+                        android:id="@+id/calendar_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/patient_birthday"
+                        android:background="@color/white"
+                        android:baselineAlignBottom="true"
+                        android:contentDescription="Select Date"
+                        android:onClick="startDatePicker"
+                        android:padding="10sp"
+                        android:src="@drawable/calendar" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender:"
+                    android:textSize="@dimen/info_text" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/Reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reason for Visit:"
+                    android:textSize="@dimen/info_text" />
+
+                <EditText
+                    android:id="@+id/PatientReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Reason"
+                    android:inputType="textAutoComplete"
+                    android:textSize="@dimen/info_text" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/Medications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medication(s):"
+                    android:textSize="@dimen/info_text" />
+
+                <EditText
+                    android:id="@+id/PatientMedications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Medications"
+                    android:inputType="textAutoComplete"
+                    android:textSize="@dimen/info_text" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/Surgery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Past Surgeries:"
+                    android:textSize="@dimen/info_text" />
+
+                <EditText
+                    android:id="@+id/PatientSurgery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Surgeries"
+                    android:inputType="textAutoComplete"
+                    android:textSize="@dimen/info_text" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/allergies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allergies:"
+                    android:textSize="@dimen/info_text" />
+
+                <EditText
+                    android:id="@+id/patient_allergies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Allergies"
+                    android:inputType="textAutoComplete"
+                    android:textSize="@dimen/info_text" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@layout/button"
+        android:padding="@dimen/info_padding"
+        android:text="@string/info_send" />
+
+</RelativeLayout>

@@ -17,6 +17,13 @@
     <string name="nav_drawer_help">Help</string>
     <string name="nav_drawer_send_image">Send Image</string>
     
+    <!--  Info Page -->
+    <string name="info_name">Name:</string>
+    <string name="info_patient_name">Enter Name</string>
+    <string name="info_birthday">Birthday:</string>
+    <string name="info_patient_birthday">Enter Birthday</string>
+    <string name="info_send">Send</string>
+    
    <!--  Help Menu --> 
   <string name="title_help">Help</string> 
   <string name="help_text">To start, select the navigation bar on the left and click on the Patient Info item. 

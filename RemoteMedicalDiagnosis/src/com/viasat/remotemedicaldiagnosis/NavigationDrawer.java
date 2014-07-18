@@ -101,7 +101,8 @@ public class NavigationDrawer extends Activity
 					startActivity(new Intent(NavigationDrawer.this, BloodPressure.class));
 					break;
 				case R.id.nav_drawer_patient_info:
-					startActivity(new Intent(NavigationDrawer.this, Patient.class));
+					startActivity(new Intent(NavigationDrawer.this, PatientInfo.class));
+					break;
 				case R.id.nav_drawer_help:
 					startActivity(new Intent(NavigationDrawer.this, Help.class));
 					break;
