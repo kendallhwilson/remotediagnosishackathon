@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/image_titleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/image_title"
+        android:textSize="@dimen/help_text_size"
+        android:textColor="@color/darkBlue" />
+    
+    <TextView
+        android:id="@+id/image_instructionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_titleView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/image_instructions" />
+
+    <ImageView
+        android:id="@+id/xrayView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send_button"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/xray"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@layout/button"
+        android:textColor="@color/white"
+        android:text="@string/upload_button_text" />
+
+</RelativeLayout>
