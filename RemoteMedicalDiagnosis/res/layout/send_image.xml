@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/send_button"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/xray2"
+        android:src="@drawable/xray"
         android:visibility="invisible" />
 
     <Button
