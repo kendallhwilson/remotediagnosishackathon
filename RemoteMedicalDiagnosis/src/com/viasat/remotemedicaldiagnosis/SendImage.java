@@ -26,16 +26,16 @@ public class SendImage extends NavigationDrawer
 			@Override
 			public void onClick(View v)
 			{
-				photoUploaded = !photoUploaded;
-				uploadButton.setText(R.string.send_button_text);
-				xray.setVisibility(View.VISIBLE);
-				titleView.setVisibility(View.GONE);
-				instructionView.setVisibility(View.GONE);
 				if (photoUploaded)
 				{
 					E.patient = new Patient("K", "W", "bday", "gender", "Reason", "surgery", "Drugs", "allergies");
 					sendImage();
 				}
+				photoUploaded = !photoUploaded;
+				uploadButton.setText(R.string.send_button_text);
+				xray.setVisibility(View.VISIBLE);
+				titleView.setVisibility(View.GONE);
+				instructionView.setVisibility(View.GONE);
 			}
 		});
     }
