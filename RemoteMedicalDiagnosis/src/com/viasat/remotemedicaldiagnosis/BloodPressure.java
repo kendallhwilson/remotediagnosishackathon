@@ -43,6 +43,12 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
     	lightOrangeBlock = (ImageView) findViewById(R.id.light_orange_block);
     	yellowBlock = (ImageView) findViewById(R.id.yellow_block);
     	greenBlock = (ImageView) findViewById(R.id.green_block);
+    	
+    	TextView normal = (TextView) findViewById(R.id.normal_text);
+    	TextView prehypertension = (TextView) findViewById(R.id.prehypertension_text);
+    	TextView high_stage1 = (TextView) findViewById(R.id.high_stage1_text);
+    	TextView high_stage2 = (TextView) findViewById(R.id.high_stage2_text);
+    	TextView hypertensive_crisis = (TextView) findViewById(R.id.hypertensive_crisis_text);
         
     	Random random = new Random();
     	pulse = random.nextInt(50) + 50; //between 50-100
@@ -69,8 +75,8 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
     		diastolic = random.nextInt(10) + 70; //between 70-80
     	}
     	
-    	TextView sysTextView = (TextView) findViewById(R.id.sys_text);
-    	TextView diTextView = (TextView) findViewById(R.id.dia_text);
+    	TextView sysTextView = (TextView) findViewById(R.id.sys_num);
+    	TextView diTextView = (TextView) findViewById(R.id.dia_num);
     	//TextView pulseTextView = (TextView) findViewById(R.id.heart_rate);
     	
     	if (E.patient != null)
