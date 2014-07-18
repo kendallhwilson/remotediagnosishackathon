@@ -1,17 +1,8 @@
 package com.viasat.remotemedicaldiagnosis;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.os.Environment;
-import android.provider.MediaStore;
 
 public class Patient 
 {
@@ -96,59 +87,16 @@ public class Patient
 	
 	public void sendImage(Context context)
 	{
-		/*
-		InputStream in = null;
-		OutputStream out = null;
-		try
-		{
-			in = context.getResources().openRawResource(R.raw.ic_launcher);
-			out = new FileOutputStream(new File(Environment.getExternalStorageDirectory(), "xray.jpg"));
-			copyFile(in, out);
-			in.close();
-			in = null;
-			out.flush();
-			out.close();
-			out = null;
-		}
-		catch (Exception e)
-		{
-			e.printStackTrace();
-		}
-
-
-
-		Intent emailIntent = new Intent(Intent.ACTION_SEND);
-        emailIntent.setType("text/html");
-        String subject = "PATIENT: " + firstName + " " + lastName + " IMAGE";
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "File attached");
-        Uri uri = Uri.fromFile(new File(Environment.getExternalStorageDirectory(), "xray.jpg"));
-        emailIntent.putExtra(Intent.EXTRA_STREAM, uri);
-        context.startActivity(emailIntent);
-        
-        */
 		
 		Intent share = new Intent(Intent.ACTION_SEND);
-        share.setType("image/jpeg");
+        share.setType("image/png");
 
-
-        //Uri imageUri = Uri.parse("android.resource://com.viasat.remotemedicaldiagnosis/drawable/xray2");
-        //Uri imageUri = Uri.parse("android.resource://com.viasat.remotemedicaldiagnosis/" +R.drawable/xray2.jpg);
+        Uri imageUri = Uri.parse("android.resource://com.viasat.remotemedicaldiagnosis/drawable/xray2");
         
-        Uri imageUri = Uri.parse(MediaStore.Images.Media.insertImage(context.getContentResolver(),
-                BitmapFactory.decodeResource(context.getResources(), R.drawable.xray2), null, null));
-        
-        share.putExtra(Intent.EXTRA_STREAM,imageUri);
+        share.putExtra(Intent.EXTRA_STREAM, imageUri);
+        String subject = "Patient Name: " + firstName + " " + lastName;
+        share.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
         context.startActivity(Intent.createChooser(share, "Share Image"));
-	}
-	
-	private void copyFile(InputStream in, OutputStream out) throws IOException
-	{
-        byte[] buffer = new byte[1024];
-        int read;
-        while ((read = in.read(buffer)) != -1)
-        {
-            out.write(buffer, 0, read);
-        }
 	}
 
 }

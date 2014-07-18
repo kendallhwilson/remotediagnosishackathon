@@ -167,12 +167,12 @@ public class BloodPressure extends NavigationDrawer implements OnGlobalLayoutLis
 		
         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams
                 (LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-        
+
 		ImageView arrow = (ImageView) findViewById(R.id.arrow);
 		int heightArrow = (int) ((float) (systolic-100)*bar.getHeight()/100);
 		
 		LayoutParams currLP = (LayoutParams) arrow.getLayoutParams();
-		currLP.topMargin = bar.getHeight() -heightArrow - redBlock.getHeight()/3;		
+		currLP.topMargin = bar.getHeight() -heightArrow + redBlock.getHeight()/4;		
 	}
     
 

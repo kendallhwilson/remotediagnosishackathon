@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent" 
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/image_titleView"
@@ -24,6 +25,16 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
         android:text="@string/image_instructions" />
+    
+     <ImageView
+        android:id="@+id/xrayCartoon"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/image_instructionView"
+        android:layout_above="@+id/send_button"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/send_image" />
 
     <ImageView
         android:id="@+id/xrayView"
