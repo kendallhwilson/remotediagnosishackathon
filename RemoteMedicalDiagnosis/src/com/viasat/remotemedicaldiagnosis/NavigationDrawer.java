@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.viasat.remotemedicaldiagnosis;
 
 import java.util.ArrayList;
