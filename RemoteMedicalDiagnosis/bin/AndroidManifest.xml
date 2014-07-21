@@ -30,6 +30,10 @@
         <activity
             android:name="com.viasat.remotemedicaldiagnosis.BloodPressure" >
         </activity>
+         <activity
+            android:name="com.viasat.remotemedicaldiagnosis.PatientInfo"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
         <activity
             android:name="com.viasat.remotemedicaldiagnosis.Help" >
         </activity>
